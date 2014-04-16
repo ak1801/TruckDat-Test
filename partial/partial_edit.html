@@ -1,4 +1,4 @@
-<form name="editForm" class="form-horizontal" ng-submit="saveContact()">
+<form name="editForm" class="form-horizontal" ng-submit="updateContact()">
   <div class="control-group" ng-class="{error: editForm.name.$invalid}">
     <label class="control-label"></label>
     <div class="controls">
@@ -19,14 +19,14 @@
   <div class="control-group">
     <label class="control-label"></label>
     <div class="controls">
-      <input type="text" name="adresse" placeholder="Pickup  Location" ng-model="contact.pickuplocation">
+      <input type="text" name="adresse" placeholder="Pickup Location" ng-model="contact.pickuplocation">
     </div>
   </div>
 
   <div class="control-group">
     <label class="control-label"></label>
     <div class="controls">
-      <input type="text" name="adresse" placeholder="Dropoff  Location" ng-model="contact.dropofflocation">
+      <input type="text" name="adresse" placeholder="Dropoff Location" ng-model="contact.dropofflocation">
     </div>
   </div>
 
@@ -46,8 +46,9 @@
 
   <div class="form-actions">
     <a class="btn" ng-href="#/list">Back</a>
-    <input type="submit" class="btn btn-success" ng-click="saveContact()" ng-disabled="editForm.$invalid" value="Save Order" />
+    <input type="submit" class="btn btn-success" ng-disabled="editForm.$invalid" value="Update Contact" />
   </div>
 </form>
 
+<!-- ng-click="updateContact()" -->
 
