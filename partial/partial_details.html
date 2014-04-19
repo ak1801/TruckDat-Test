@@ -3,15 +3,17 @@
 <ul class="unstyled">
   <li class="well span6" ng-show="(contactId, contact) in contacts">
       <contact-widget contact="contact"></contact-widget>
-    <a href="#/list/{{contact.name}}"></a>
-        <p>{{contact.snippet}}</p>
-  </li>
-</ul>
+      <a href="#/list/{{contact.name}}"></a>
+	  <p>{{contact.snippet}}</p>
+ </li>
+ </ul>
 
-<table ng-table class="table table-striped">
+ <br>
+
+ <table ng-table class="table table-striped">
     <tr ng-repeat="bid in bids">
         <td data-title="'Name'">{{bid.name}}</td>
         <td data-title="'Bid Amount'">{{bid.amount}}</td>
         <td data-title="'Select'"><input type="checkbox" name="" value=""></td>
     </tr>
-</table>
+</table>	
